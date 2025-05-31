@@ -59,5 +59,15 @@ return {
       "git_status",
       "document_symbols",
     },
+
+    add_blank_line_at_top = true, -- Add a blank line at the top of the tree.
+
+    enable_opened_markers = true,  -- Enable tracking of opened files. Required for `components.name.highlight_opened_files`
+    components = {
+      name = {
+        highlight_opened_files = true,
+      },
+    },
   },
 }
+-- vim: ts=2 sts=2 sw=2 et

@@ -45,3 +45,4 @@ vim.cmd([[
   nnoremap <silent> <C-Left>  :vertical resize -1<CR>
   nnoremap <silent> <C-Right> :vertical resize +1<CR>
 ]])
+-- vim: ts=2 sts=2 sw=2 et

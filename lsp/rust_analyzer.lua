@@ -117,3 +117,4 @@ return {
     end, { desc = 'Reload current cargo workspace' })
   end,
 }
+-- vim: ts=2 sts=2 sw=2 et
