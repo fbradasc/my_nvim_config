@@ -40,9 +40,12 @@ vim.cmd([[
   nnoremap <unique> <silent> <F3> :Neotree toggle source=git_status float<CR>
   nnoremap <unique> <silent> <F4> :Neotree toggle source=document_symbols position=right<CR>
   nnoremap <unique> <silent> <F5> :Neotree toggle source=buffers<CR>
-  nnoremap <silent> <C-Up>    :resize +1<CR>
-  nnoremap <silent> <C-Down>  :resize -1<CR>
-  nnoremap <silent> <C-Left>  :vertical resize -1<CR>
-  nnoremap <silent> <C-Right> :vertical resize +1<CR>
+  nnoremap <silent> <C-Up>        :resize +1<CR>
+  nnoremap <silent> <C-Down>      :resize -1<CR>
+  nnoremap <silent> <C-Left>      :vertical resize -1<CR>
+  nnoremap <silent> <C-Right>     :vertical resize +1<CR>
+  nnoremap <silent> <leader>gg    :grep '<cword>'<CR>:copen<CR>
+  nnoremap <silent> <leader>gs    :grep '<C-r>/'<CR>:copen<CR>
 ]])
+
 -- vim: ts=2 sts=2 sw=2 et

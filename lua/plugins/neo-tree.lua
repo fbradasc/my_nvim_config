@@ -18,7 +18,7 @@ return {
       function()
         require("neo-tree.command").execute({ source = "filesystem", toggle = true })
       end,
-      desc = "Git Explorer",
+      desc = "File Explorer",
     },
     {
       "<leader>ge",
