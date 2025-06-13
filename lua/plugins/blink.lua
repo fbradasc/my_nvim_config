@@ -24,6 +24,33 @@ return {
         },
         keymap = {
           ["<C-f>"] = {},
+          ["<C-Space>"] = { "show", "show_documentation", "hide_documentation" },
+          ["<Up>"] = { "select_prev", "fallback" },
+          ["<Down>"] = { "select_next", "fallback" },
+          ["<C-N>"] = { "select_next", "show" },
+          ["<C-P>"] = { "select_prev", "show" },
+          ["<C-J>"] = { "select_next", "fallback" },
+          ["<C-K>"] = { "select_prev", "fallback" },
+          ["<C-U>"] = { "scroll_documentation_up", "fallback" },
+          ["<C-D>"] = { "scroll_documentation_down", "fallback" },
+          ["<C-e>"] = { "hide", "fallback" },
+          ["<CR>"] = { "accept", "fallback" },
+--           ["<Tab>"] = {
+--             "select_next",
+--             "snippet_forward",
+--             function(cmp)
+--               if vim.api.nvim_get_mode().mode == "c" and has_words_before() then return cmp.show() end
+--             end,
+--             "fallback",
+--           },
+--           ["<S-Tab>"] = {
+--             "select_prev",
+--             "snippet_backward",
+--             function(cmp)
+--               if vim.api.nvim_get_mode().mode == "c" then return cmp.show() end
+--             end,
+--             "fallback",
+--           },
         },
         cmdline = {
           enabled = false,
